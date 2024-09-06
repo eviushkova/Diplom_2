@@ -26,4 +26,4 @@ class TestUserLoginAPI:
         })
 
         assert response.status_code == 401, f'Status code is {response.status_code}'
-        assert response.json()["message"] == data.Messages.MESSAGE_LOGIN_ERROR
+        assert response.json()["message"] == data.Messages.LOGIN_ERROR
